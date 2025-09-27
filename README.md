@@ -26,16 +26,29 @@ A full-stack online quiz application where users can take quizzes and see their 
 
 ## Folder Structure
 
-online-quiz-app/
-├─ backend/
-│ ├─ server.js
-│ ├─ package.json
-│ ├─ Dockerfile
-│ └─ .env
-├─ frontend/
-│ ├─ src/
-│ ├─ package.json
-│ ├─ Dockerfile
-│ └─ ...
-├─ docker-compose.yml
-└─ README.md
+online-quiz-app/                ← Root folder
+├─ backend/                     ← Node.js + Express backend
+│  ├─ server.js                 ← Main server file
+│  ├─ package.json              ← Backend dependencies
+│  ├─ package-lock.json         
+│  ├─ Dockerfile                ← Dockerfile for backend
+│  ├─ .env                      ← Environment variables
+│  └─ routes/                   ← (Optional) separate API routes
+│      └─ quiz.js
+├─ frontend/                     ← React frontend
+│  ├─ src/
+│  │  ├─ components/
+│  │  │  └─ Question.jsx
+│  │  ├─ pages/
+│  │  │  ├─ StartPage.jsx
+│  │  │  ├─ QuizPage.jsx
+│  │  │  └─ ResultPage.jsx
+│  │  ├─ api/
+│  │  │  └─ api.js
+│  │  ├─ App.jsx
+│  │  └─ styles.css
+│  ├─ package.json
+│  ├─ package-lock.json
+│  └─ Dockerfile                ← Dockerfile for frontend
+├─ docker-compose.yml            ← Orchestrates backend, frontend, MySQL
+└─ README.md                     ← Project description, setup instructions
