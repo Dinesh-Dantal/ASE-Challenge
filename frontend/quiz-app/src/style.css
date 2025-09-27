@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  color: black; /* All default text black */
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  color: black; /* container text black */
+}
+
+h1, h2, p, li {
+  color: black; /* all headings and paragraphs black */
+  margin: 10px 0;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  transition: all 0.2s;
+  color: black; /* button text black */
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.start-button, .submit-button {
+  background-color: #4caf50;
+  color: black; /* button text black */
+}
+
+.nav-button {
+  background-color: #2196f3;
+  color: black; /* button text black */
+}
+
+/* Question Card */
+.question-card {
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-button {
+  background: #f0f0f0;
+  margin: 5px 0;
+  color: black; /* option text black */
+}
+
+.option-button.selected {
+  background-color: #ff9800;
+  color: black; /* selected option text black */
+}
+
+/* Quiz Progress */
+.progress {
+  margin-top: 15px;
+  font-weight: bold;
+  color: black; /* progress text black */
+}
+
+/* Result Page */
+.result-list {
+  list-style: none;
+  padding: 0;
+}
+
+.result-list li {
+  padding: 8px 0;
+  color: black; /* result text black */
+}
+
+.result-list li.correct {
+  color: green;
+}
+
+.result-list li.wrong {
+  color: red;
+}
